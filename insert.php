@@ -1,16 +1,13 @@
+<!DOCTYPE html>
 <html>
+ 
+<head>
+    <title>Sarmiento</title>
+</head>
+ 
 <body>
-
-<form action="index.php" method="post">
-First Name: <input type="text" name="Fname"><br>
-Last Name: <input type="text" name="Lname"><br>
-Age: <input type="number" name="Age"><br>
-E-mail: <input type="email" name="Email"><br>
-Detail: <input type="text" name="Detail"><br>
-<input type="submit">
-</form>
-
- <?php
+    <center>
+        <?php
 $servername = "localhost";
 $username = "admin";
 $password = "admin123";
@@ -41,9 +38,12 @@ $dbname = "sarmiento";
             '$Lname','$Age','$Email','$Detail')";
          
         if(mysqli_query($conn, $sql)){
-            echo "<h3></h3>";
+            echo "<h3>data stored in a database successfully."
+                . " Please browse your localhost php my admin"
+                . " to view the updated data</h3>";
  
-            echo nl2br("");
+            echo nl2br("\n$Fname\n $Lname\n "
+                . "$Age\n $Email\n $Detail");
         } else{
             echo "ERROR: Hush! Sorry $sql. "
                 . mysqli_error($conn);
@@ -52,6 +52,7 @@ $dbname = "sarmiento";
         // Close connection
         mysqli_close($conn);
         ?>
-
+    </center>
 </body>
+ 
 </html>
