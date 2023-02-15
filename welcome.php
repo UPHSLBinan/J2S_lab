@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Insert tangaka</title>
+	<title>PageOne</title>
 </head>
 
 <body>
