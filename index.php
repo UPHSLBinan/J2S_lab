@@ -1,18 +1,22 @@
 <html>
-<body>
+  <body>
+    <form method="POST" action="store_data.php">
+      <label for="FirstName">First Name:</label>
+      <input type="text"  name="FirstName"><br><br>
 
+      <label for="LastName">Last Name:</label>
+      <input type="text"  name="LastName"><br><br>
 
+      <label for="Age">Age:</label>
+      <input type="Int"  name="Age"><br><br>
 
-<form action="connect.php" method="post">
-Last Name:  <input type="text" name="LastName"><br>
-First Name: <input type="text" name="FirstName"><br>
-Age:        <input type="int"  name="Age"><br>
-Email:      <input type="varchar" name="Email"><br>
-Detail:     <input type="varchar" name="Detail"><br>
-<input type="submit">
-</form>
+      <label for="Email">Email:</label>
+      <input type="varchar"  name="Email"><br><br>
 
+      <label for="Detail">Detail:</label>
+      <input type="varchar" name="Detail"><br><br>
 
-
-</body>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
 </html>
