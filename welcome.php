@@ -1,19 +1,4 @@
-<html>
-<body>
-
-<form action="index.php" method="post">
-First Name: <input type="text" name="fname"><br>
-Last Name: <input type="text" name="lname"><br>
-Age: <input type="number" name="age"><br>
-E-mail: <input type="email" name="email"><br>
-Detail: <input type="text" name="detail"><br>
-
-<input type="submit">
-</form>
-
-</body>
-</html>
-
+<!DOCTYPE html>
 <html>
  
 <head>
@@ -49,9 +34,12 @@ $dbname = "ariado";
             '$lname','$age','$email','$detail')";
          
         if(mysqli_query($conn, $sql)){
-            echo " ";
+            echo "<h3>Record stored in the database successfully."
+                . " Please browse your localhost php my admin"
+                . " to view the updated data</h3>";
  
-            echo nl2br(" ");
+            echo nl2br("\n$fname\n $lname\n "
+                . "$age\n $email\n $detail");
         } else{
             echo "ERROR: Hush! Sorry $sql. "
                 . mysqli_error($conn);
