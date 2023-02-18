@@ -19,7 +19,7 @@
 		$Birthday=$_POST['Birthday'];
 		$Address=$_POST['Address'];
 
-	$sql="update `crud` set Number=$Number,FirstName='$FirstName','MiddleName='$MiddleName',
+	$sql="update `crud` set Number=$Number,FirstName='$FirstName',MiddleName='$MiddleName',
     LastName='$LastName',Age='$Age',Birthday='$Birthday',Address='$Address' where Number=$Number";
 	$result=mysqli_query($con,$sql);
 	if($result){
