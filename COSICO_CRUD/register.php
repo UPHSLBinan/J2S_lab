@@ -133,21 +133,20 @@ require_once "database.php";
 				</div>
 <div class= "form-group">
 			<div class="row">
-		<div class="col-md-2">
-				<div class="mb">
+		<div class="col-md-5">
+				<div class="mb-3">
   		  
 		
-		<button type ="submit" value = "  Log in   " name= "log"id= "log"> <a href="login.php"> Log in </a></input>
-		</div>
-<div class="col-md-2">
-		 <input type ="submit" value = "Register" name= "register"id= "register"> </input>
-		</div>
-		<button value="Registered"><a href="users.php"  >Registered User</a> </button>
+		<button type ="submit" value = "  Log in   " name= "log"id= "log"> <a href="login.php"> Log in </a></button>
+		</div><button type ="submit" value = "Register" name= "register"id= "register">Register </button>
+		<button type ="submit" name= "users" value="Registered"><a href="users.php"  > Users</a> </button>
+	</div>			
 
-			</div>
-</div>
+		
 
-</div>
+			
+</div>	
+</div></div>
 
 </body>
 </html>
