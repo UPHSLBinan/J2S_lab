@@ -82,13 +82,6 @@
               <div><p>Not registered yet <a href="login.php">Login</a></p></div>
             </div>
       </form>
-      </div>
-       
-    </div>
-    </div>
-    </div>
-  </div>
-	
 <?php
 
 // Database configuration
@@ -132,6 +125,13 @@ if(isset($_POST['id']) && isset($_POST['firstname']) && isset($_POST['middlename
 } 
 
 ?>
+      </div>
+       
+    </div>
+    </div>
+    </div>
+  </div>
+	
 
 </body>
 </html>
