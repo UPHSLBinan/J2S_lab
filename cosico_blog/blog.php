@@ -132,3 +132,6 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     </div>
                 </div>
                 <?php endforeach; ?>
+	</body>
+		    </html>
+
