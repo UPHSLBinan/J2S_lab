@@ -1,0 +1,36 @@
+body{
+height: 200px;
+width: 100%;
+padding: 50x;
+font-family: Copperplate, fantasy;
+font-size: 27px;
+color: black;
+background: linear-gradient(pink, white);
+height: 200vh;
+overflow: show;
+}
+.container{
+margin-top:5px;
+  font-family: Copperplate, fantasy;
+font-size: 30px;
+color: white;
+background-color: #FF647F;
+    max-width: 900px;
+	max-height: 1500px;
+    margin:40 auto;
+    padding: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     border-style: solid;
+     border-width: 10px;
+	border-color: white;
+}
+.h1{
+text-align: center;
+padding: 0 0 20px 0;
+border-bottom: 1px solid silver;
+}
+
+.form-group{
+ margin-top:40px;
+    margin-bottom:42px;
+}
