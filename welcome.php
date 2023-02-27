@@ -11,7 +11,7 @@
 $servername = "localhost";
 $username = "admin";
 $password = "admin";
-$dbname = "ariado";
+$dbname = "cualquiera";
 
         $conn = mysqli_connect("localhost", "admin", "admin", "ariado");
          
