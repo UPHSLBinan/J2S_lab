@@ -1,0 +1,13 @@
+.container1{
+background-color: rgba(255, 255, 255, 0.7) !important;
+padding: 20px !important;
+border-radius: 20px !important;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+margin: 30px !important;
+{
+.textfieldd{
+border-radius: 10px !important;
+}
+#textfieldd{
+border-radius: 10px !important;
+}

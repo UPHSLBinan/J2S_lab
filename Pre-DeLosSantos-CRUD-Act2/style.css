@@ -1,0 +1,139 @@
+
+html {
+text-align: center;
+margin: center;
+}
+
+body {
+	 padding-top: 5%;
+	padding-bottom: 5%;
+	vertical-align: middle;
+	display:flex; 
+	flex-direction:column; 
+	justify-content:center;
+	 background-size: cover;
+	min-height:100vh;
+  background-position: center;
+  background-attachment: fixed;
+	background-image: url('bgimage.png');
+ 	 background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+
+form{
+
+	overflow:hidden;
+	vertical-align: middle;
+	flex-direction:column; 
+	 display: inline-block;
+	justify-content:center;
+
+
+}
+
+
+.container1{
+ position: relative;	
+	margin: 0 auto;
+        display: block;
+	text-align: center;
+        display: inline-block;
+	vertical-align: middle;
+	justify-content:center;
+    	background: rgba(255, 255, 255, .8);
+    	flex-wrap: nowrap;
+    	padding: 50px !important;
+
+	border: 3px solid rgba(175, 175, 175, .5);
+	border-radius: 15px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container1 img {
+  	position: absolute;
+	transform: translate(-50%, -50%);
+  	top: 0%; 
+	left: 50%;
+  	z-index: 1; 
+}
+
+.form-group{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: Century Gothic;
+	font-size: 13px;
+	border-radius: 20px;
+}
+
+
+
+
+
+input{
+	border: 0.5px solid rgba(175, 175, 175, .5);
+	border-radius: 10px;
+	height: 30px;
+	padding: 10px;
+	font-family: Century Gothic;
+}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="date"]{
+	border: 0.5px solid rgba(175, 175, 175, .5);
+	border-radius: 10px;
+	box-sizing: border-box;
+        width: 100%;
+	padding: 10px;
+	font-family: Century Gothic;
+	border-bottom: 3px solid rgba(0, 0, 0, .5);
+}
+
+
+input::placeholder {
+   	opacity: 0.5;
+	font-family: Century Gothic;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+input[type="submit"], input[type="button"] {
+  	line-height: 0em;
+	width: 100% !important;
+	background-image: url('buttonbg.png');
+	background-size: cover;
+	font-weight: bold;
+	color: white;
+	cursor: pointer; /* Change the cursor to a pointer */
+	transition: transform 0.2s ease-in-out !important;
+}input[type="submit"]:hover, input[type="button"]:hover {
+  background-image: url('buttonbg1.png'); /* Change the background color on hover */
+} input[type="submit"]:active, input[type="button"]:active {
+  transform: scale(0.95); /* Scale down the element */
+  box-shadow: none; /* Remove box shadow when element is clicked */
+}
+
+
+
+#delete, #logout, #registered {
+  	width: 240px !important;
+}
+
+.container{
+	text-align: center; 
+	display: inline-block;
+}
+.alcrt{
+	font-weight: bold;
+}
+#textfont{
+	font-size: 20px;
+	color: #7d7fdeff;
+}
+label{
+	font-weight: bold;
+}
+
+#firstname, #lastname{
+	width: 49%;
+	display: inline-block !important;
+}
