@@ -1,0 +1,28 @@
+action{
+	width: 30px;
+}
+.form-group{
+	background:  #8C48B5;
+	
+	
+}
+.input-field{
+	background: #8C48B5;
+
+	
+}
+	
+body{
+	background-color:#D4A1F3; 
+					  top: 50px;
+					  box-sizing: border-circle; 
+					  border-radius: 15px;
+					  color:#F9F9F9; 
+					  text-align:left;
+					  width: 25%;
+					padding: 20px 30px;						
+					margin: 30px auto;
+
+  					
+}
+
