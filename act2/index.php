@@ -14,6 +14,7 @@
         <a href="login.php" class="btn btn-warning">Logout</a>
 	<a href="update.php" class="btn btn-warning">Update</a>
 	<a href="delete.php" class="btn btn-warning">Delete</a>
+	<a href="index1.php" class="btn btn-warning">Post Blog</a>
     </div>
 </body>
 </html>
