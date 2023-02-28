@@ -1,6 +1,3 @@
-<?php
-require_once "database.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,28 +12,9 @@ require_once "database.php";
     <div class="container">
         <h1>Welcome to Dashboard</h1>
         <a href="login.php" class="btn btn-warning">Logout</a>
-        <a href="update.php" class="btn btn-warning">Update</a>
-        <a href="delete.php" class="btn btn-warning">Delete</a>
-        <a href="index1.php" class="btn btn-warning">Post Blog</a>
-        <?php
-	session_start();
-
-      $gmail = $_SESSION["gmail"];
-            // assuming you have established a database connection
-            $query = "SELECT * FROM users WHERE gmail =$gmail";
-           
-		 $result = mysqli_query($conn, $query);
-         	if($result)
-$row = mysqli_fetch_assoc($result); {
-                echo $rows['id'];
-		echo $rows['gmail'];
-                echo $rows['firstname'];
-                echo $rows['middlename'];
-                echo $rows['lastname'];
-                echo $rows['birthday'];
-                echo $rows['age'];
-            }
-        ?>
+	<a href="update.php" class="btn btn-warning">Update</a>
+	<a href="delete.php" class="btn btn-warning">Delete</a>
+	<a href="index1.php" class="btn btn-warning">Post Blog</a>
     </div>
 </body>
 </html>
