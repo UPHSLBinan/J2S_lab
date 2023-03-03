@@ -1,0 +1,60 @@
+/* Body */
+body {
+  background-color: #f2f2f2;
+}
+
+/* Headings */
+h1 {
+  color: #6C5CE7;
+}
+
+/* Form container */
+.container {
+  background-color: #F3EFEF;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 50px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Form inputs */
+.form-control {
+  border: 1px solid #6C5CE7;
+  border-radius: 5px;
+  padding: 10px;
+  color: #6C5CE7;
+}
+
+/* Submit button */
+#register {
+  background-color: #6C5CE7;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#log {
+  background-color: #6C5CE7;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Registered users button */
+button {
+  background-color: #6C5CE7;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 40px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover, #register:hover {
+  opacity: 0.8;
+}

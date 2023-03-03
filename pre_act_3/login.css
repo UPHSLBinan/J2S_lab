@@ -1,0 +1,43 @@
+body {
+  background-color: #e6d9f2;
+}
+
+.card-header {
+  background-color: #75539e;
+  color: #fff;
+}
+
+.card {
+  border: 1px solid #75539e;
+}
+
+.btn-primary {
+  background-color: #75539e;
+  border-color: #75539e;
+  padding: 10px 15px;
+  margin-top: 10px;
+  position: relative;
+  left: 400px;
+  top: 2px;
+}
+
+#register {
+  position: relative;
+  left: 200px;
+  top: 2px;
+}
+
+.btn-primary:hover {
+  background-color: #633b8c;
+  border-color: #5c3580;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 0;
+  border-color: #75539e;
+}
+
