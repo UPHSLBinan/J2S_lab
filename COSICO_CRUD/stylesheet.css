@@ -1,0 +1,84 @@
+/* Body */
+body {
+  background-color: #f5f5f5;
+}
+h1{
+color: #0077c0;
+}
+/* Form container */
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 50px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Form labels */
+.form-label {
+  color: #0077c0;
+}
+
+/* Form inputs */
+.form-control {
+  border: 1px solid #0077c0;
+  border-radius: 5px;
+  padding: 10px;
+  color: #0077c0;
+}
+
+.form-group {
+    position: relative;
+}
+
+#log, #register {
+    position: relative;
+    bottom: 0;
+}
+
+#log {
+    right: 100px;
+}
+
+#users {
+    right: 2;
+}
+/* Submit button */
+#register {
+  background-color: #0077c0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#log {
+  background-color: #0077c0;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Registered users button */
+button {
+
+  background-color: #0077c0;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 10px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button:hover, #register:hover {
+  opacity: 0.8;
+}
