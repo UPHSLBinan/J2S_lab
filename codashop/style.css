@@ -1,0 +1,306 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+	
+}
+
+body{
+	min-height: 100vh;
+	background: linear-gradient(#2b1055, #7597de);
+	
+}
+
+header{
+	
+	position: absolute;
+	top: 0;
+	left:0;
+	width:100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 2;
+}
+
+header .logo{
+	
+color:#fff;
+font-weight: 700;
+text-decoration: none;
+font-size: 2em;
+text-transform: uppercase;
+letter-spacing: 2px;
+	
+}
+
+header ul
+{
+	
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+header ul li
+{
+	
+	list-style: none;
+	margin-left: 10px;
+    padding:2px;
+}
+
+header ul li a {
+	text-decoration: none;
+	padding:25px;
+	color: #fff;
+}
+
+header ul li a:hover, header ul li a:active {
+	background: #fff;
+	color: #2b1055;
+	border-radius: 10px;
+	
+	
+}
+
+
+
+#home-logo
+{
+	
+	border-radius: 5px;
+	
+}
+
+section
+{
+	color: #fff;
+	position:relative; 
+	width: 100%;
+	height:100vh;
+	padding:150px;
+}
+section h1{
+	text-align:center; 
+	padding: 30px;
+	font-size: 3em;
+}
+
+section h2{
+	
+	padding: 70px;
+	padding-top: 300px; 
+	font-size: 3em;
+}
+
+section img
+
+{
+position:absolute;
+top: 0;
+left:0;
+width: 100%;
+height: 100%;	
+object-fit: cover;
+mix-blend-mode:soft-light;
+z-index: -1;
+}
+.row-container {
+	 padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	
+}
+.row-container h1{
+	
+	color:#fff;
+	
+	
+	
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tile {
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.tile img {
+  display: block;
+  max-width: 100%;
+  transition: transform 0.3s ease-out;
+}
+
+.tile:hover img {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.tile img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.tile.view-more {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.tile.view-more a {
+  display: block;
+  padding: 10px;
+	text-decoration: none;
+}
+
+.tile.view-more a:hover {
+  background-color: #e6e6e6;
+}
+
+.tile.view-more a span {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+}
+  .tile a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tile span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;  
+    background-color: rgba(0, 0, 0, .9);
+    color: #FFE9E9;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.parallax {
+ 
+  background-image: url("assets/hype bg.jpg");
+  color:#fff;
+  min-height: 250px;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.parallax h1{
+	
+	font-size: 4em;
+	padding-top: 250px;
+	
+}
+
+.promo{
+	
+	text-align: center;
+	height:auto;
+	width: auto;
+	
+}
+.promo h1{
+padding: 10px;
+	justify-content: center;
+	color:#fff;
+}
+
+
+
+
+
+ .slideshow {
+	 
+	display: flex;
+	 justify-content: center;
+align-items: center;
+  position:relative;
+  width: 80%;
+  height: 200px;
+   margin-left:  250px;
+}
+
+.slideshow img {
+ align-item: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow .slide.active {
+  opacity: 1;
+}
+
+.slideshow .slide:first-child {
+  opacity: 1;
+}
+
+
+footer {
+  background-color: #2b1055;
+  padding: 20px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	color:#fff;
+}
+footer a{
+ text-decoration: none;	
+	color:#fff;
+}
+
+footer h2{
+	 font-size: 24px;
+  margin-bottom: 10px;
+}
+
+footer p{
+	 font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.Contact {
+  flex-grow: 1;
+}
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+  .copyright {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+

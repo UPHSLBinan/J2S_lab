@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,300&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+	scroll-behavior: smooth;
+}
+body{
+	min-height: 100vh;
+	background: linear-gradient(#2b1055, #7597de);
+	overflow-x: hidden;
+}
+
+header{
+	
+	position: absolute;
+	top: 0;
+	left:0;
+	width:100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 2;
+}
+
+header .logo{
+	
+color:#fff;
+font-weight: 700;
+text-decoration: none;
+font-size: 2em;
+text-transform: uppercase;
+letter-spacing: 2px;
+	
+}
+
+header ul
+{
+	
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+header ul li
+{
+	
+	list-style: none;
+	margin-left: 10px;
+    padding:2px;
+}
+
+header ul li a {
+	text-decoration: none;
+	padding:25px;
+	color: #fff;
+}
+
+header ul li a:hover, header ul li a:active {
+	background: #fff;
+	color: #2b1055;
+	border-radius: 10px;
+	
+	
+}
+
+
+
+#home-logo
+{
+	
+	border-radius: 5px;
+	
+}
+section
+{
+	position:relative; 
+	width: 100%;
+	height:100vh;
+	padding:150px;
+}
+
+
+section img
+
+{
+position:absolute;
+top: 0;
+left:0;
+width: 100%;
+height: 100%;	
+object-fit: cover;
+mix-blend-mode:soft-light;
+z-index: -1;
+}
+
+section h1{
+	text-align:center; 
+	padding: 30px;
+	font-size: 3em;
+}
+
+.container{
+	padding:20px;
+	height: 90vh;
+	background-color: #2b1055;
+	
+}
+
+
+
+.container, h1{
+
+	color:#fff;
+	position: relative;
+   display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.parallax {
+ 
+  background-image: url("assets/hype bg.jpg");
+  color:#fff;
+  height: 450px;
+  border-radius: 10px;
+  /* Create the parallax scrolling effect */
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax h1{
+	
+	font-size: 4em;
+	padding-top: 60px;
+	padding-left: 550px;
+}
+
+
+footer {
+  background-color: #2b1055;
+  padding: 20px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	color:#fff;
+}
+footer a{
+ text-decoration: none;	
+	color:#fff;
+}
+
+footer h2{
+	 font-size: 24px;
+  margin-bottom: 10px;
+}
+
+footer p{
+	 font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.Contact {
+  flex-grow: 1;
+}
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+  .copyright {
+    margin-top: 20px;
+  }
+}

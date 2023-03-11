@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+  
+<title>codashop</title>
+<link rel="stylesheet" type ="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+
+	
+	
+</head>
+<body>
+<header>
+	<div style="display: inline-flex;">
+	<img src="assets/logo.png" alt="home-log" width="53" height="50" id ="home-logo">
+ <a href="#" class="logo">CodaShop</a>	
+	</div>
+	<ul>
+	
+	<li><a href=""><i class="mdi mdi-home"></i>Home</a></li>
+	<li><a href="coda_about.html">About us</a></li>
+	<li><a href="log.html"><i class="mdi mdi-account"></i>Sign in</a></li>
+		
+	</ul>
+	
+</header>
+		
+	<section >
+		<h1>Welcome to CODASHOP!</h1>
+		<img src ="assets/stars.png" id = "light">
+
+
+		<div class="parallax"><h2>Enjoy Gaming with Fast Transactions to Up your Game!</h2></div>
+		
+	
+	</section>
+	
+
+	
+<!----Main ----->	
+
+	
+  <div class="row-container">
+	  <h1>Buy Game Credits Now!</h1>
+    <div class="row">
+      <div class="tile">
+        <a href="#">
+          <img src="assets/coc.jpg" alt="Image1">
+			<span>Clash of Clans</span>
+        </a>
+      </div>
+      <div class="tile">
+        <a href="#">
+          <img src="assets/codm.jpg" alt="Image 2">
+		<span>Call of Duty Mobile</span>	
+        </a>
+      </div>
+      <div class="tile">
+        <a href="#">
+          <img src="assets/images.jfif">
+			<span>NBA 2K23</span>
+        </a>
+      </div>
+		 <div class="tile">
+        <a href="#">
+          <img src="assets/ml.jpg" alt="Image 4">
+			<span>Mobile Legends</span>
+        </a>
+      </div>
+      <!-- Add more tiles for additional image links -->
+    </div>
+    <div class="row">
+     
+      <div class="tile">
+        <a href="#">
+          <img src="assets/valo.jpg" alt="Image 5">
+			<span>Valorant</span>
+        </a>
+      </div>
+      <div class="tile">
+        <a href="#">
+          <img src="assets/wildrift.jpg" alt="Image 6">
+			<span>LOL: Wild Rift</span>
+        </a>
+      </div>
+      <!-- Add more tiles for additional image links -->
+    </div>
+    <div class="tile view-more">
+      <a href="#">
+        View More
+      </a>
+    </div>
+  </div>
+
+	
+<!----promo ----->
+	
+	<div class ="promo">
+	<h1>Top Up for Popular Games</h1>
+<div class="slideshow">
+  <img class="slide" src="assets/coc.jpg">
+  <img class="slide" src="assets/valo.jpg">
+  <img class="slide" src="assets/ml.jpg">
+</div>
+	</div>
+	
+	<footer>
+		<div class ="Contact">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="sample@example.com">sample@example.com</a></p>
+  <p>Phone:#999919</p>
+  <p>Address: sample street A</p>
+			</div>
+		
+		<div class="rights">
+		 <p>&copy; 2023 Codashop Company. All rights reserved.</p>
+		</div>
+</footer>
+
+	
+	
+	<script>
+	let stars = document.getElementById('light');
+		window.addEventListener('scroll',function(){
+			let value = window.scrollY;
+			
+			stars.style.left= value * 0.2+ 'px';
+		});
+	</script>
+
+
+    
+	
+	
+</body>
+</html>
+	<script>
+const slides = document.querySelectorAll('.slide');
+const slideInterval = setInterval(nextSlide,3000);
+let currentSlide = 0;
+
+function nextSlide() {
+  slides[currentSlide].className = 'slide';
+  currentSlide = (currentSlide+1)%slides.length;
+  slides[currentSlide].className = 'slide active';
+}
+</script>	
