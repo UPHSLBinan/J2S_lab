@@ -16,15 +16,18 @@ body{
 }
 
 header{
-	
-	position: absolute;
+	 display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+	position: relative;
 	top: 0;
 	left:0;
 	width:100%;
 	padding: 30px 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	
+	
+	
 	z-index: 2;
 }
 
@@ -43,16 +46,18 @@ header ul
 {
 	
 	display: flex;
-	justify-content: center;
-	align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex-grow: 0;
 }
 
 header ul li
 {
 	
-	list-style: none;
-	margin-left: 10px;
-    padding:2px;
+	 list-style: none;
+  margin: 0 10px;
 }
 
 header ul li a {
@@ -87,6 +92,7 @@ section
 	padding:150px;
 }
 section h1{
+	
 	text-align:center; 
 	padding: 30px;
 	font-size: 3em;
@@ -112,10 +118,13 @@ mix-blend-mode:soft-light;
 z-index: -1;
 }
 .row-container {
-	 padding-top: 20px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  margin: 0 auto;
+  padding: 0 20px;
 	
 }
 .row-container h1{
@@ -216,9 +225,11 @@ z-index: -1;
 
 .promo{
 	
-	text-align: center;
-	height:auto;
-	width: auto;
+	 display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 	
 }
 .promo h1{
@@ -299,8 +310,150 @@ footer p{
 }
 
 
+@media screen and (max-width: 768px) {
+    header {
+		
+    padding: 15px;
+  }
+
+  header .logo {
+    font-size: 1.5em;
+  }
+
+  header ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header ul li {
+    margin: 5px 0;
+  }
+
+  header ul li a {
+    padding: 15px 10px;
+  }
+
+  section {
+    padding: 50px;
+  }
+
+  section h1 {
+    font-size: 2em;
+  }
+
+  section h2 {
+    font-size: 2em;
+    padding: 50px;
+    padding-top: 150px;
+  }
+
+  .row-container h1 {
+    font-size: 2em;
+  }
+
+  .tile img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .tile span {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer h2 {
+    margin-top: 10px;
+  }
+}
 
 
 
 
+
+/* CSS for screens with a width of 768px or more */
+@media screen and (max-width: 768px) {
+	
+	  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  div {
+    margin-bottom: 20px;
+    width: auto;
+  }
+  ul {
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  li {
+    margin: 10px 0;
+  }
+
+
+	section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+	section h1 {
+   padding-bottom: 50px;
+		text-align: start;
+  }
+ 
+  
+  
+  .parallax {
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  section {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	   align-text: center;
+  }
+  
+  h1 {
+    font-size: 1em;
+  }
+  
+
+  
+ 
+  
+  h2 {
+    font-size: 3em;
+    color: white;
+    text-shadow: 1px 1px #000000;
+  }
+.promo {
+    margin-top: 20px;
+  }
+	.slideshow {
+	 
+	display: flex;
+	 justify-content: center;
+align-items: center;
+  position:relative;
+  width: 80%;
+  height: 200px;
+   margin-left:  100px;
+}
+}
 
