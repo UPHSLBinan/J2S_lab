@@ -62,19 +62,39 @@ section{
 	position: relative;
 	width: 1200px;
 	height: 300px;
-	margin: 240px auto;
+	margin: 20px auto;
 }
 
 .container .box{
 	position:relative;
-	width: 370px;
+	width: 320px;
 	height: 400px;
 	background: transparent;
 	border: 1px solid #fff;
-	margin: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 25px;
+	
+}
+
+.container .box:before{
+	content: '';
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0, .5);
+	border: 1px solid #fff;
 	box-sizing: content-box;
 	overflow: hidden;
 	border-radius: 25px;
+	margin: 20px;
+	
+}
+
+.box h1{
+	text-align: center;
+	line-height: 400px;
+	color: #fff;
 }
 
 .sec{
