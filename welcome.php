@@ -13,7 +13,7 @@ $username = "admin";
 $password = "admin";
 $dbname = "ariado";
 
-        $conn = mysqli_connect("localhost", "admin", "admin", "ariado");
+        $conn = mysqli_connect("localhost", "admin", "admin", "vergara");
          
         // Check connection
         if($conn === false){
