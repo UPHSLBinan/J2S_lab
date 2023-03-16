@@ -9,7 +9,7 @@
 section{
 	position: relative;
 	width: 100%;
-	height: 90vh;
+	height: 80vh;
 	background: url("Aquarium.jpg");
 	background-size: cover;
 }
@@ -58,6 +58,25 @@ section{
 	}
 }
 
+.container{
+	position: relative;
+	width: 1200px;
+	height: 300px;
+	margin: 240px auto;
+}
+
+.container .box{
+	position:relative;
+	width: 370px;
+	height: 400px;
+	background: transparent;
+	border: 1px solid #fff;
+	margin: 15px;
+	box-sizing: content-box;
+	overflow: hidden;
+	border-radius: 25px;
+}
+
 .sec{
 	padding: 100px;
 }
@@ -70,6 +89,9 @@ section{
 	font-size: 2em;
 	color: #111;
 }
+
+
+
 .header{
 	position: sticky;
 	top: 0;
